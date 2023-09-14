@@ -4,7 +4,7 @@ This documentation outlines the usage, formats, and setup instructions for the M
 
 ## Diagram
 
-![Link](https://imgur.com/a/ggkK1TT)
+:star:[Link](https://imgur.com/a/ggkK1TT) :star:
 
 ## Standard Request and Response Formats
 
