@@ -255,33 +255,31 @@ To test your Flask application, you can use a tool like curl or Postman to send 
 
 [`python3 app.py`](python3 app.py)
 
-This starts your Flask development server, and it should be listening on `http://127.0.0.1:5000`.
+This starts your Flask development server, and it should be listening on `http://127.0.0.1:80`.
 
 Open another terminal window, and you can use curl to send HTTP requests to your API. Here are some example requests for each of your API endpoints:
 
 **Create a new user:**
 
-curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe"}' http://127.0.0.1:5000/api/
+    curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe"}' http://127.0.0.1:80/api/
 
 Read a user by their ID (replace <user_id> with an actual user ID. [example: 1.]):
 
 
-curl `http://127.0.0.1:5000/api/`<user_id>
+    curl `http://127.0.0.1:80/api/`<user_id> or [](https://hngx-second-stage.onrender.com/api/users)
+
 Update a user's name by their ID (replace <user_id> with an actual user ID and change "New Name" to the desired name):
+    curl `-X PUT -H` "Content-Type: application/json" -d '{"name": "`New Name`"}' `http://127.0.0.1:80/api/`<user_id>
 
-curl `-X PUT -H` "Content-Type: application/json" -d '{"name": "`New Name`"}' `http://127.0.0.1:5000/api/`<user_id>
 Delete a user by their ID (replace <user_id> with an actual user ID):
+    curl `-X DELETE http://127.0.0.1:80/api/`<user_id>
 
 
-curl `-X DELETE http://127.0.0.1:5000/api/`<user_id>
 List all users:
+    curl `http://127.0.0.1:80/api/users` or [](https://hngx-second-stage.onrender.com/api/users)
 
-
-curl `http://127.0.0.1:5000/api/users`
 Access the root URL:
-
-
-curl `http://127.0.0.1:5000/`
+    curl `http://127.0.0.1:80/`
 
 After sending each curl request, you should receive responses from your Flask application.
 

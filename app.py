@@ -15,9 +15,9 @@ class User(db.Model):
     name = db.Column(db.String(255), nullable=False)
 
 
-'''@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET'])
 def index():
-    return "Welcome to Flask app"'''
+    return "Welcome, There's Nothing to see here. Just to show that the app is running"
 
 
 @app.route('/api/', methods=['POST'])
