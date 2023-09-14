@@ -1,11 +1,10 @@
-# My Flask API Documentation
+# My Flask API Documentation File
 
 This documentation outlines the usage, formats, and setup instructions for the My Flask API.
 
-## UML Diagram
+## Diagram
 
-https://imgur.com/a/d1ECDQm
-![UML DIAGRAM](UML-Diagram.png)
+![Link](https://imgur.com/a/ggkK1TT)
 
 ## Standard Request and Response Formats
 
@@ -25,7 +24,7 @@ Response Format (Success - HTTP 201):
 {
   "id": 9,
   "message": "User created successfully",
-  "name": "John Doe"
+  "name": "Janet Jackson"
 }
 ```
 
@@ -52,7 +51,7 @@ Response Format (Success - HTTP 200):
 ```json
 {
   "id": 1,
-  "name": "John Doe"
+  "name": "Harry Potter"
 }
 ```
 
@@ -100,7 +99,7 @@ Response Format (Success - HTTP 200):
 {
   "id": 30,
   "message": "User deleted successfully",
-  "name": "Temitope"
+  "name": "Miykael"
 }
 ```
 
@@ -120,11 +119,11 @@ Response Format (Success - HTTP 200):
 [
   {
     "id": 1,
-    "name": "John Doe"
+    "name": "Emmanuel Arinze"
   },
   {
     "id": 2,
-    "name": "Jane Smith"
+    "name": "Arinze Emmanuel"
   }
 ]
 ```
@@ -140,7 +139,7 @@ POST /api/
 Content-Type: application/json
 
 {
-  "name": "Alice"
+  "name": "Jane"
 }
 ```
 
@@ -150,7 +149,7 @@ Content-Type: application/json
 {
   "id": 9,
   "message": "User created successfully",
-  "name": "John Doe"
+  "name": "Donald Fin"
 }
 ```
 
@@ -167,7 +166,7 @@ GET /api/1
 ```json
 {
   "id": 1,
-  "name": "Alice"
+  "name": "Holiday"
 }
 ```
 
@@ -205,7 +204,7 @@ The API assumes that the name field is a required attribute for creating and upd
 1. Clone the repository:
 
 ```h
-git clone https://github.com/kalwhyte/hngxSecondStage
+git clone https://github.com/kalwhyte/hngx-SecondStage
 ```
 
 Navigate to to hng-task-two directory
