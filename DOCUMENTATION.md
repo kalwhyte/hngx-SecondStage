@@ -174,14 +174,16 @@ GET /api/1
 
 `Request:`
 
-````http
+```http
 PUT /api/1
 Content-Type: application/json
+```
+
 ```http
 {
   "name": "Updated Name"
 }
-````
+```
 
 Response (HTTP 200):
 
@@ -203,36 +205,30 @@ The API assumes that the name field is a required attribute for creating and upd
 
 1. Clone the repository:
 
-```h
+```
 git clone https://github.com/kalwhyte/hngx-SecondStage
 ```
 
 Navigate to to hng-task-two directory
 
-```sh
-cd hng-task-two
+```
+cd hngx-SecondStage
 ```
 
 2. **Create a virtual environment (optional but recommended):**
 
-```sh
+```
 python -m venv venv
 ```
 
-```sh
-source venv/bin/activate  # On Windows, use venv\Scripts\activate
+```
+. stage-two/bin/activate
 ```
 
 3. **Install dependencies:**
 
-```sh
-pip install -r requirements.txt
 ```
-
-4. **Create a .env file in the project root directory with the following content:**
-
-```sh
-DATABASE_URI=mysql+pymysql://username:password@localhost/mydatabase
+pip install -r requirements.txt
 ```
 
 5. **Run the application:**
@@ -242,7 +238,7 @@ python3 app.py
 ```
 
 ## API Endpoints
-
+  *  GET /
   *  POST /api/: Create a new user.
   *  GET /api/<int:user_id>: Get user details by ID.
   *  PUT /api/<int:user_id>: Update user details by ID.
