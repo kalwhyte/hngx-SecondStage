@@ -209,23 +209,23 @@ The API assumes that the name field is a required attribute for creating and upd
 git clone https://github.com/kalwhyte/hngx-SecondStage
 ```
 
-Navigate to to hng-task-two directory
+Navigate to the directory
 
 ```
 cd hngx-SecondStage
 ```
 
-2. **Create a virtual environment (optional but recommended):**
+2. **Create a virtual environment:**
 
 ```
-python -m venv venv
+python -m venv stage-two
 ```
 
 ```
 . stage-two/bin/activate
 ```
 
-3. **Install dependencies:**
+3. **Install the dependencies:**
 
 ```
 pip install -r requirements.txt
